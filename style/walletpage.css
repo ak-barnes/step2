@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family:  'Poppins', sans-serif;
+}
+    #header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    -webkit-box-shadow: 0 10px 5px #141b29;
+    -moz-box-shadow: 0 10px 5px #141b29;
+    box-shadow: 0 -15px 25px #141b29;
+}
+.header-text {
+    display: flex;
+    justify-content: space-between;
+    color: black !important;
+    font-weight: 100 !important;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.header-img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.header-text h4 {
+    color: black;
+    font-weight: 400 !important;
+    font-size: .9rem;
+    margin-top: 8px;
+}
+.coin-section-header {
+    color: black;
+}
+.coin-section-header h1 {
+    font-weight: 700;
+    margin-top: 2rem !important;
+}
+.coin-section-header h6 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: .8rem;
+}
+.coin-section-footer {
+    color: black;
+    margin-top: 1.5rem;
+}
+.coin-section-footer h6 {
+    font-size: 12px;
+    font-weight: 400;
+}
+.coin-section-icons i {
+    font-size: 12.5px;
+}
+.coin {
+    background-color: #fff;
+    border: none;
+}
+.coin-img {
+    width: 5rem;
+    height: 5rem;
+    -webkit-transition: 500ms linear;
+    transition: 500ms linear;
+}
+.coin-img:hover {
+    transform: scale(1.1);
+}
+.coin-registry {
+    margin-top: 2.5rem;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-column-gap: 5rem !important;
+  grid-row-gap: 1rem !important;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."; 
+}
+.coin h4 {
+    font-weight: 500;
+    color: black;
+    font-size: 13px !important;
+    margin-top: 13px;
+    /* letter-spacing: .5px; */
+}
+.wallet-address {
+    background-color: #fff;
+    color: black;
+    border: 2px solid #141b29 !important;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 3rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.modal_title {
+    color: black; 
+    font-weight: 600; 
+    font-size: 15px;
+}
+.btn_close {
+    font-size: 13px;
+    font-family:  'IBM Plex Sans Thai Looped', sans-serif;
+    background-color: #fff;
+    color: black;
+    border: 1px solid black !important;
+    padding-top: 4.5px !important;
+    padding-bottom: 4.5px !important;
+}
+.btn_close:hover {
+    color: black;
+}
+.btn_proceed {
+    font-family:  'IBM Plex Sans Thai Looped', sans-serif;
+    background-color: black; 
+    color: #fff; 
+    font-weight: 400; 
+    font-size: 13px;
+}
+.btn-primary {
+    border: none !important;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: black !important;
+    border: none;
+}
+small {
+    color: grey;
+    font-size: 10px;
+    position: absolute;
+    left: 15px;
+}
+.modal-header i {
+    color: black;
+}
+.modal-body input {
+    border: 2px solid black !important;
+}
+.modal-body input:active,
+.modal-body input:focus {
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .coin-registry {
+        margin-top: 2rem;
+        display: grid !important; 
+        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 1rem !important;
+        grid-template-areas:
+        ". . ."
+        ". . ."
+    }
+    .coin-img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .coin h4 {
+        font-size: 12px;
+    }
+    #header {
+        padding-top: 10px;
+    }
+    .header-img {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+    .header-text h4 {
+        margin-top: 10px;
+        font-weight: 700;
+    }
+    .wallet-address {
+        width: 100%;
+    }
+}
